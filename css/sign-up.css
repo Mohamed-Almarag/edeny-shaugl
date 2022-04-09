@@ -1,0 +1,318 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+.main-section-title {
+  color: #0d98a2;
+  margin: 0 auto 4rem;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.main-section-title::before {
+  position: absolute;
+  content: "";
+  top: 115%;
+  left: calc(50% - 25px);
+  width: 50px;
+  height: 4px;
+  background-color: #0d98a2;
+}
+
+::-moz-selection {
+  background-color: #0d98a2;
+  color: #fff;
+}
+
+::selection {
+  background-color: #0d98a2;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #0d98a2;
+  height: 100px;
+  max-height: 100px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 2px;
+}
+
+.change-photo {
+  position: absolute;
+  bottom: -20px;
+  right: 100px;
+}
+
+.change-photo.for-persaonal {
+  bottom: -13px;
+  right: 90px;
+}
+
+.change-photo .file-input {
+  display: none;
+}
+
+.change-photo .upload-photo {
+  width: 40px;
+  height: 40px;
+  color: #0d98a2;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1px 12px rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.change-photo .upload-photo:hover {
+  background-color: #0d98a2;
+  color: #fff;
+}
+
+.change-photo .upload-photo .icon {
+  font-size: 16px;
+}
+
+.go-to-up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0d98a2;
+  color: #fff;
+  z-index: 300;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  line-height: 35px;
+  text-align: center;
+  font-size: 18px;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+  display: none;
+}
+
+.main-form-container .main-form .form-group {
+  -webkit-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  border: 1px solid #747474;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  padding: 10px;
+  gap: 5px;
+  line-height: 1;
+}
+
+.main-form-container .main-form .form-group.for-check-box {
+  border: none;
+  padding: 0;
+}
+
+.main-form-container .main-form .form-group .form-icon {
+  color: #797979;
+}
+
+.main-form-container .main-form .form-group .input-form {
+  width: 100%;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  color: #797979;
+}
+
+.main-form-container .main-form .form-group .input-form.text-area {
+  height: 115px;
+  resize: none;
+}
+
+.main-form-container .main-form .form-group .input-form:focus {
+  outline: none;
+}
+
+.main-form-container .main-form .form-group:focus-within {
+  border-color: #0d98a2 !important;
+}
+
+.main-form-container .main-form .form-group input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  visibility: hidden;
+  text-align: center;
+}
+
+.main-form-container .main-form .form-group input[type="checkbox"]:after,
+.main-form-container .main-form .form-group input[type="checkbox"]::after {
+  content: " ";
+  background-color: #fff;
+  display: inline-block;
+  color: #0d98a2;
+  width: 25px;
+  height: 25px;
+  visibility: visible;
+  border: 1px solid #747474;
+  padding-top: 3px;
+}
+
+.main-form-container .main-form .form-group input[type="checkbox"]:checked:after,
+.main-form-container .main-form .form-group input[type="checkbox"]:checked::after {
+  content: "\2714";
+  font-weight: bold;
+}
+
+.main-form-container .main-form .form-group .form-label {
+  margin: 0 8px;
+}
+
+.main-form-container .submit-button {
+  background-color: #0d98a2;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-form-container .submit-button {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.main-form-container .form-ask {
+  font-weight: 600;
+}
+
+.main-form-container .form-link {
+  margin: 0 10px;
+  color: #0d98a2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.main-profile-form .form-grous {
+  color: #797979;
+}
+
+.main-profile-form .form-grous .prfile-label {
+  margin: 0 0 15px;
+}
+
+.main-profile-form .form-grous .prfile-input {
+  -webkit-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  border: 1px solid #747474;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+}
+
+.main-profile-form .form-grous .prfile-input.profile-text-area {
+  resize: none;
+  height: 200px;
+}
+
+.main-profile-form .form-grous .prfile-input:focus {
+  border-color: #0d98a2 !important;
+}
+
+.main-profile-form .form-grous .edit-img-container {
+  position: relative;
+  height: 300px;
+  max-height: 300px;
+}
+
+.main-profile-form .form-grous .edit-img-container .immg {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1px 12px rgba(0, 0, 0, 0.4);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-profile-form .form-grous .edit-img-container.personal {
+  width: 150px;
+  height: 150px;
+}
+
+.main-profile-form .form-grous .edit-img-container.personal .immg {
+  width: 150px;
+  height: 150px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+.main-profile-form .all-certifications {
+  border-top: 1px solid #747474;
+  padding: 30px 0;
+}
+
+.all-skills .tgs-input {
+  border: 1px solid #747474;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.all-skills .tgs-input:focus {
+  border-color: #0d98a2 !important;
+}
+
+.all-skills .tgs-input .tagify__tag .tagify__tag-text {
+  color: #797979;
+}
+
+.all-skills .tgs-input div::before {
+  background-color: #e5e5e5;
+}
+
+.form-section {
+  height: 100vh;
+  padding-top: 120px;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-section .ask-forget {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-bottom: 10px;
+}
+
+.form-section .ask-forget .links {
+  color: #0d98a2;
+  text-decoration: none;
+  font-weight: 600;
+}

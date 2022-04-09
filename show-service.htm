@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ai khedma</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="lib/fontawesome/css/all.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Montserrat:ital,wght@0,400;0,600;1,400&family=Roboto:ital,wght@0,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/show-service.css" />
+  </head>
+  <body>
+    <!-- Start Navbar Header  -->
+    <header class="main-header fixed-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              class="logo d-block"
+              src="./images//home//logo.png"
+              alt="logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >الرئيسيه</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">من نحن</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="show-service.htm">اعرض خدمه</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wallet.html">المحفظه</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">تواصل معنا</a>
+              </li>
+            </ul>
+            <div class="user">
+              <div class="user-image d-flex align-items-center">
+                <i class="fa fa-comment d-block message-icon"></i>
+                <a href="profile.html">
+                  <img
+                    src="./images//home/user.png"
+                    alt="user"
+                    class="d-block"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Start Navbar Header  -->
+    <!-- Start Show Service  -->
+    <section class="show-service">
+      <h2 class="text-center">اعرض شغلك مجانا لتتلقى عروض من الاخرين!</h2>
+      <div class="container">
+        <div class="service-details mt-4">
+          <h6>أعرض شغل من الاخرين</h6>
+          <div
+            class="part-one d-flex justify-content-between align-items-center flex-wrap"
+          >
+          <select class="form-select main-select-box d-block" aria-label="Default select example">
+            <option class="select-option" selected>فئة الخدمه</option>
+            <option class="select-option" value="1">برمجه</option>
+            <option class="select-option" value="2">تطوير</option>
+            <option class="select-option" value="3">كود</option>
+          </select>
+          <select class="form-select main-select-box d-block" aria-label="Default select example">
+            <option class="select-option" selected>عنوان الوظيفه</option>
+            <option class="select-option" value="1">الاول</option>
+            <option class="select-option" value="2">الثانى</option>
+            <option class="select-option" value="3">الثالث</option>
+          </select>
+        </div>
+        <textarea class="w-100 mt-4 mb-4 job-text-area"></textarea>
+        <div
+        class="part-one mb-4 d-flex justify-content-between align-items-center flex-wrap"
+          >
+          <select class="form-select main-select-box d-block" aria-label="Default select example">
+            <option class="select-option" selected>المهارات المطلوبه للشغل</option>
+            <option class="select-option" value="1">برمجه</option>
+            <option class="select-option" value="2">تطوير</option>
+            <option class="select-option" value="3">كود</option>
+          </select>
+          <select class="form-select main-select-box d-block" aria-label="Default select example">
+            <option class="select-option" selected>المقابل المادى للشغل</option>
+            <option class="select-option" value="1">الاول</option>
+            <option class="select-option" value="2">الثانى</option>
+            <option class="select-option" value="3">الثالث</option>
+          </select>
+        </div>
+        <div
+        class="part-one  d-flex justify-content-between align-items-center flex-wrap"
+          >
+          <select class="form-select main-select-box d-block" aria-label="Default select example">
+            <option class="select-option" selected>المده المطلوبه لتنفيذ الشغل</option>
+            <option class="select-option" value="1">vue</option>
+            <option class="select-option" value="2">vuex</option>
+            <option class="select-option" value="3">nuxt</option>
+          </select>
+          <select class="form-select main-select-box d-block" aria-label="Default select example">
+            <option class="select-option" selected>الخبره المطلوبه لتنفيذ الشغل</option>
+            <option class="select-option" value="1">java</option>
+            <option class="select-option" value="2">php</option>
+            <option class="select-option" value="3">javascript</option>
+          </select>
+        </div>
+      </div>
+    </section>
+    <!-- End Show Service  -->
+
+    <!-- Start Footer  -->
+    <footer class="footer text-center text-capitalize text-white">
+      <span>copyright &copy; 2022 all rights reserved</span>
+    </footer>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

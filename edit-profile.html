@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ai khedma</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="lib/fontawesome/css/all.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Montserrat:ital,wght@0,400;0,600;1,400&family=Roboto:ital,wght@0,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./lib/tagify/css/tagify.css">
+    <link rel="stylesheet" href="css/edit-profile.css" />
+  </head>
+  <body dir="rtl">
+    <!-- Start Navbar Header  -->
+    <header class="main-header fixed-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              class="logo d-block"
+              src="./images//home//logo.png"
+              alt="logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >الرئيسيه</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutus">من نحن</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="show-service.htm">اعرض خدمه</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wallet.html">المحفظه</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactus">تواصل معنا</a>
+              </li>
+            </ul>
+            <div class="user">
+              <div class="user-image d-none d-flex align-items-center">
+                <i class="fa fa-comment d-block message-icon"></i>
+                <a href="profile.html">
+                  <img
+                    src="./images//home/user.png"
+                    alt="user"
+                    class="d-block"
+                  />
+                </a>
+              </div>
+              <div class="for-registration">
+                <a class="go-sign-up" href="sign-up.html">انشاء حساب</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Start Navbar Header  -->
+    <section class="profile-information">
+      <h2 class="text-center main-section-title">تعديل بيانات الملف الشخصى</h2>
+      <div class="container">
+        <form action="" class="main-profile-form">
+          <div class="row">
+            <!-- Start Change Profile Photo Or Profile Cover Photo  -->
+            <div class="form-grous mb-5 col-md-12">
+              <div class="edit-img-container">
+                <img
+                  class="immg w-100 h-100 d-block"
+                  src="./images/profile/01.png"
+                  alt=""
+                />
+                <!-- Start Upload File  -->
+                <div class="change-photo ">
+                  <label
+                    class="upload-photo d-flex align-items-center justify-content-center"
+                    for="upload-photo"
+                  >
+                    <i class="fa fa-camera icon"></i>
+                  </label>
+                  <input
+                    class="file-input d-none"
+                    type="file"
+                    id="upload-photo"
+                  />
+                </div>
+                <!-- End Upload File  -->
+              </div>
+            </div>
+            <div class="form-grous mb-4 col-md-12">
+              <div class="edit-img-container personal">
+                <img
+                  class="immg w-100 h-100 d-block"
+                  src="./images/profile/02.png"
+                  alt=""
+                />
+                <!-- Start Upload File  -->
+                <div class="change-photo for-persaonal">
+                  <label
+                    class="upload-photo d-flex align-items-center justify-content-center"
+                    for="upload-photo"
+                  >
+                    <i class="fa fa-camera icon"></i>
+                  </label>
+                  <input
+                    class="file-input d-none"
+                    type="file"
+                    id="upload-photo"
+                  />
+                </div>
+                <!-- End Upload File  -->
+              </div>
+            </div>
+            <!-- End Change Profile Photo Or Profile Cover Photo  -->
+            <!-- Start Add Skills  -->
+            <div class="all-skills form-grous mb-4 col-md-12">
+              <label for="" class="prfile-label">المهارات</label>
+              <input name="tags" class="tgs-input" placeholder="اضف مهاره جديده" >
+            </div>
+            <!-- End Add Skills  -->
+            <div class="form-grous mb-4 col-md-6">
+              <label for="" class="prfile-label">الأسم</label>
+              <input class="prfile-input" type="text" autocomplete="off" />
+            </div>
+            <div class="form-grous mb-4 col-md-6">
+              <label for="" class="prfile-label">الوظيفه</label>
+              <input class="prfile-input" type="text" autocomplete="off" />
+            </div>
+            <div class="form-grous mb-4 col-md-6">
+              <label for="" class="prfile-label">العنوان</label>
+              <input class="prfile-input" type="text" autocomplete="off" />
+            </div>
+            <div class="form-grous mb-4 col-md-6">
+              <label for="" class="prfile-label">عدد سنوات الخبره</label>
+              <input class="prfile-input" type="number" autocomplete="off" />
+            </div>
+            <div class="form-grous mb-4 col-md-6">
+              <label for="" class="prfile-label">مدة العمل بالاسبوع</label>
+              <input class="prfile-input" type="number" autocomplete="off" />
+            </div>
+            <div class="form-grous mb-4 col-md-6">
+              <label for="" class="prfile-label">معدل العمل للساعه</label>
+              <input class="prfile-input" type="number" autocomplete="off" />
+            </div>
+            <div class="form-grous mb-4 col-md-12">
+              <label for="" class="prfile-label">الوصف</label>
+              <textarea class="prfile-input profile-text-area"></textarea>
+            </div>
+            </div>
+            <!-- Start Education Certifications  -->
+            <div class="all-certifications mt-4">
+              <h6 class="mb-3">الشهادات التعليميه</h6>
+              <div class="row">
+                <div class="form-grous mb-4 col-md-6">
+                  <label for="" class="prfile-label">جامعة</label>
+                  <input class="prfile-input" type="text" autocomplete="off" />
+                </div>
+                <div class="form-grous mb-4 col-md-6">
+                  <label for="" class="prfile-label"
+                    >الدرجة العلمية/الشهادة</label
+                  >
+                  <input class="prfile-input" type="text" autocomplete="off" />
+                </div>
+                <div class="form-grous mb-4 col-md-6">
+                  <label for="" class="prfile-label"
+                    >مجال الدراسة / الكليه</label
+                  >
+                  <input class="prfile-input" type="text" autocomplete="off" />
+                </div>
+                <div class="form-grous mb-4 col-md-6">
+                  <label for="" class="prfile-label">تاريخ البدء</label>
+                  <input class="prfile-input" type="date" />
+                </div>
+                <div class="form-grous mb-4 col-md-6">
+                  <label for="" class="prfile-label">تاريخ الإنتهاء </label>
+                  <input class="prfile-input" type="date" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Start Profile Information  -->
+
+    <!-- End Profile Information  -->
+    <!-- Start Footer  -->
+    <footer class="footer text-center text-capitalize text-white">
+      <span>copyright &copy; 2022 all rights reserved</span>
+    </footer>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/jquery/jquery-3.5.1.min.js"></script>
+    <script src="./lib/tagify/js/jQuery.tagify.min.js"></script>
+    <script src="./js/pages/edit-profile/edit-profile.js"></script>
+  </body>
+</html>
