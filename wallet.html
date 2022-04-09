@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ai khedma</title>
+    <title>Edeny-shaugl</title>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="lib/fontawesome/css/all.css" />
     <link
@@ -18,13 +18,7 @@
     <header class="main-header fixed-top">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img
-              class="logo d-block"
-              src="./images//home//logo.png"
-              alt="logo"
-            />
-          </a>
+          <a class="navbar-brand" href="index.html"> ادينى شغل </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -44,7 +38,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">من نحن</a>
+                <a class="nav-link" href="#aboutus">من نحن</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="show-service.htm">اعرض خدمه</a>
@@ -53,7 +47,7 @@
                 <a class="nav-link" href="wallet.html">المحفظه</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">تواصل معنا</a>
+                <a class="nav-link" href="#contactus">تواصل معنا</a>
               </li>
             </ul>
             <div class="user">
@@ -67,6 +61,9 @@
                   />
                 </a>
               </div>
+              <div class="for-registration d-none">
+                <a class="go-sign-up" href="sign-up.html">انشاء حساب</a>
+              </div>
             </div>
           </div>
         </div>
@@ -74,12 +71,19 @@
     </header>
     <!-- Start Navbar Header  -->
     <section class="main-wallet">
-      <!-- Start Wallet Part One  -->
-      <section class="get-mony">
-        <h2 class="text-center">المحفظه</h2>
-        <div class="container">
+      <div class="the-main-cover d-flex justify-content-center">
+        <img
+          src="./images//home/show.png"
+          class="w-100 h-100 cover-img"
+          alt="show-service"
+        />
+        <h2 class="text-center title-cover">المحفظه</h2>
+      </div>
+
+      <div class="container">
+        <div class="the-main-wrapper get-mony">
           <div
-            class="currency mt-4 d-flex justify-content-between align-items-center flex-wrap"
+            class="currency d-flex justify-content-between align-items-center flex-wrap"
           >
             <div class="mon-container">
               <h6 class="d-block">الرصيد</h6>
@@ -87,24 +91,26 @@
             </div>
             <button class="d-block wallet-button">سحب الاموال</button>
           </div>
-        </div>
-      </section>
-      <!-- End Wallet Part One  -->
-      <!-- Start Wallet Part Two  -->
-      <section class="dates get-mony">
-        <h2 class="text-center">تاريخ المعاملات</h2>
-        <div class="container">
-          <div
-            class="currency last-date mt-4 d-flex justify-content-center align-items-center text-center"
-          >
-            <p class="tex">
-              <span class="d-block">تاريخ المعاملات فارغ</span>
-              <span class="d-block">لم يتم اجراء اى معاملات حتى الان</span>
-            </p>
+          <div class="for-cuurent">
+            <h4 class="mt-3 mon-title">تاريخ المعاملات</h4>
+            <div class="wallet-img-container">
+              <img
+                src="./images//home//wallet.png"
+                alt="wallet"
+                class="d-block h-100 w-100 img"
+              />
+            </div>
+            <div
+              class="currency last-date mt-4 d-flex justify-content-center align-items-center text-center"
+            >
+              <p class="tex">
+                <span class="d-block">تاريخ المعاملات فارغ</span>
+                <span class="d-block">لم يتم اجراء اى معاملات حتى الان</span>
+              </p>
+            </div>
           </div>
         </div>
-      </section>
-      <!-- End Wallet Part Two  -->
+      </div>
     </section>
     <!-- Start Footer  -->
     <footer class="footer text-center text-capitalize text-white">

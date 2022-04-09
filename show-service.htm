@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ai khedma</title>
+    <title>Edeny-shaugl</title>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="lib/fontawesome/css/all.css" />
     <link
@@ -18,13 +18,7 @@
     <header class="main-header fixed-top">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img
-              class="logo d-block"
-              src="./images//home//logo.png"
-              alt="logo"
-            />
-          </a>
+          <a class="navbar-brand" href="index.html"> ادينى شغل </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -44,7 +38,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">من نحن</a>
+                <a class="nav-link" href="#aboutus">من نحن</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="show-service.htm">اعرض خدمه</a>
@@ -53,7 +47,7 @@
                 <a class="nav-link" href="wallet.html">المحفظه</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">تواصل معنا</a>
+                <a class="nav-link" href="#contactus">تواصل معنا</a>
               </li>
             </ul>
             <div class="user">
@@ -67,6 +61,9 @@
                   />
                 </a>
               </div>
+              <div class="for-registration d-none">
+                <a class="go-sign-up" href="sign-up.html">انشاء حساب</a>
+              </div>
             </div>
           </div>
         </div>
@@ -75,10 +72,13 @@
     <!-- Start Navbar Header  -->
     <!-- Start Show Service  -->
     <section class="show-service">
-      <h2 class="text-center">اعرض شغلك مجانا لتتلقى عروض من الاخرين!</h2>
+      <div class="the-main-cover d-flex justify-content-center">
+        <img src="./images//home/show.png" class="w-100 h-100 cover-img" alt="show-service">
+        <h2 class="text-center title-cover">اطلب شغلك مجانا لتتلقى عروض من الاخرين!</h2>
+      </div>
       <div class="container">
-        <div class="service-details mt-4">
-          <h6>أعرض شغل من الاخرين</h6>
+        <div class="service-details">
+          <h6 class="mb-4">اطلب شغل من الاخرين</h6>
           <div
             class="part-one d-flex justify-content-between align-items-center flex-wrap"
           >
@@ -128,6 +128,7 @@
             <option class="select-option" value="3">javascript</option>
           </select>
         </div>
+        <button class="add-service-btn d-block">اضف</button>
       </div>
     </section>
     <!-- End Show Service  -->
