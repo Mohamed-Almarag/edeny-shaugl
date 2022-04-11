@@ -204,6 +204,25 @@ body {
   text-decoration: none;
 }
 
+.main-form-container.regigister {
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 30px 10px;
+}
+
+.main-form-container.regigister .photo-contain {
+  max-height: 460px;
+}
+
+.main-form-container .form-title {
+  color: #203D7F;
+  font-weight: 600;
+}
+
+.main-form-container .form-decription {
+  color: #797979;
+}
+
 .main-form-container .main-form .form-group {
   -webkit-transition: 0.3s all ease-in-out;
   -o-transition: 0.3s all ease-in-out;
@@ -225,6 +244,17 @@ body {
 
 .main-form-container .main-form .form-group .form-icon {
   color: #797979;
+}
+
+.main-form-container .main-form .form-group .form-icon.form-password {
+  cursor: pointer;
+  -webkit-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.main-form-container .main-form .form-group .form-icon.form-password:hover {
+  color: #203D7F;
 }
 
 .main-form-container .main-form .form-group .input-form {

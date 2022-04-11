@@ -52,3 +52,16 @@ window.onscroll = () => {
 goUpButton.onclick = () => {
   window.scrollTo(0, 0);
 };
+
+// For Select Box And Signal
+let selectBox = document.querySelectorAll(".select-box option");
+let offers = document.querySelector(".offers .hi");
+console.log(selectBox);
+console.log(offers);
+
+selectBox.forEach((element) => {
+  console.log(element.getAttribute("value"));
+  element.addEventListener("click", function (e) {
+    console.log(e.target.value);
+  });
+});

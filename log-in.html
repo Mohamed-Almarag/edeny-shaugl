@@ -15,52 +15,66 @@
   </head>
   <body>
     <!-- Start Sign Up Form  -->
-    <section class="form-section">
+    <section class="form-section regigister">
       <div class="container">
-        <div class="main-form-container">
-          <h2 class="text-center mb-5 form-title">تسجيل الدخول</h2>
-          <form action="" class="main-form">
-            <div class="form-group d-flex align-items-center mb-5">
-              <i class="fa fa-phone form-icon"></i>
-              <input
-                class="input-form"
-                placeholder="رقم الهاتف"
-                type="tel"
-                autocomplete="off"
-              />
-            </div>
-            <div class="form-group d-flex align-items-center mb-5">
-              <i class="fa fa-lock form-icon"></i>
-              <input
-                class="input-form"
-                placeholder="ادخل اسمك"
-                type="text"
-                autocomplete="off"
-              />
-            </div>
-            <div
-              class="form-group for-check-box d-flex align-items-center mb-5"
-            >
-              <input class="check-box-input" type="checkbox" />
-              <label class="form-label" for="">تذكرنى على هذا الجهاز</label>
-            </div>
-            <div class="ask-forget d-flex">
-              <a class="links" href="forget-passowrd.html">نسيت كلمة المرور؟</a>
-            </div>
-            <button type="button" class="d-block submit-button">
-              تسجيل الدخول
-            </button>
-          </form>
-          <p class="form-ask mt-5 text-center">
-            ليس لديك حساب بعد؟<a class="form-link" href="sign-up.html"
-              >سجل الان مجانا</a
-            >
-          </p>
+        <h3 class="give-me-work">ادينى شغل</h3>
+        <div class="row">
+          <div class="photo-contain col-md-6">
+            <img
+              class="w-100 h-100"
+              src="./images/home/sign-up.png"
+              alt="sign-up"
+            />
+          </div>
+          <div class="main-form-container regigister col-md-6">
+            <h2 class="text-center mb-3 form-title">تسجيل الدخول</h2>
+            <p class="text-center mb-4 form-decription">
+              تسجيل الدخول برقم الهاتف الخاص بك
+            </p>
+            <form action="" class="main-form">
+              <div class="form-group d-flex align-items-center mb-5">
+                <i class="fa fa-phone form-icon"></i>
+                <input
+                  class="input-form"
+                  placeholder="رقم الهاتف"
+                  type="tel"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form-group d-flex align-items-center mb-5">
+                <i class="fa fa-lock form-icon"></i>
+                <input
+                  class="input-form password-input"
+                  placeholder="كلمة السر"
+                  type="password"
+                  autocomplete="off"
+                />
+                <i class="fa fa-eye form-icon form-password"></i>
+              </div>
+              <div
+                class="form-group for-check-box d-flex align-items-center mb-5"
+              >
+                <input class="check-box-input" type="checkbox" />
+                <label class="form-label" for="">تذكرنى</label>
+              </div>
+
+              <button type="button" class="d-block submit-button">دخول</button>
+            </form>
+            <p class="form-ask mt-5 text-center">
+              <a class="form-link" href="sign-up.html">نسيت كلمة السر؟</a>
+            </p>
+            <p class="form-ask mt-5 text-center">
+              ليس لديك حساب؟<a class="form-link" href="sign-up.html"
+                >انشاء حساب</a
+              >
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <!-- End Sign Up Form  -->
 
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/pages/register/form-input.js"></script>
   </body>
 </html>
