@@ -1,11 +1,16 @@
 // Form Password Input
-let passwordInput = document.querySelector(".password-input");
-let passwordIcon = document.querySelector(".form-password");
 
-passwordIcon.addEventListener("click", () => {
-  if (passwordInput.getAttribute("type") == "password") {
-    passwordInput.setAttribute("type", "text");
-  } else {
-    passwordInput.setAttribute("type", "password");
-  }
+let passwordInput = document.querySelectorAll(".password-input");
+let passwordIcon = document.querySelectorAll(".form-password");
+
+passwordIcon.forEach((el) => {
+  el.addEventListener("click", () => {
+    passwordInput.forEach((item) => {
+      if (item.getAttribute("type") == "password") {
+        item.setAttribute("type", "text");
+      } else {
+        item.setAttribute("type", "password");
+      }
+    });
+  });
 });

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ai khedma</title>
+    <title>Edeny-shaugl</title>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="lib/fontawesome/css/all.css" />
     <link rel="stylesheet" href="lib/slick/css/slick.css" />
@@ -20,13 +20,7 @@
     <header class="main-header fixed-top">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img
-              class="logo d-block"
-              src="./images//home//logo.png"
-              alt="logo"
-            />
-          </a>
+          <a class="navbar-brand" href="index.html"> ادينى شغل </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -46,7 +40,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">من نحن</a>
+                <a class="nav-link" href="#aboutus">من نحن</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="show-service.htm">اعرض خدمه</a>
@@ -55,22 +49,29 @@
                 <a class="nav-link" href="wallet.html">المحفظه</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">تواصل معنا</a>
+                <a class="nav-link" href="#contactus">تواصل معنا</a>
               </li>
             </ul>
             <div class="user">
               <div class="user-image d-flex align-items-center">
-                <a href="messages.html" class="chatt-msg">
-                  <i class="fa fa-comment d-block message-icon"></i>
+                <i class="fa fa-comment d-block message-icon"></i>
+                <a href="profile.html">
+                  <img
+                    src="./images//home/user.png"
+                    alt="user"
+                    class="d-block"
+                  />
                 </a>
-                <img src="./images//home/user.png" alt="user" class="d-block" />
+              </div>
+              <div class="for-registration d-none">
+                <a class="go-sign-up" href="sign-up.html">انشاء حساب</a>
               </div>
             </div>
           </div>
         </div>
       </nav>
     </header>
-    <!-- End Navbar Header  -->
+    <!-- Start Navbar Header  -->
     <!-- Strat Profile Background -->
     <section class="profile-bg">
       <img class="image" src="./images//profile//01.png" alt="" />
@@ -79,7 +80,7 @@
     <!-- Start Profile Deatils  -->
     <section class="user-details">
       <div class="container">
-        <div class="main-details d-flex">
+        <div class="main-details">
           <div class="user-image">
             <img
               class="img"
@@ -87,28 +88,19 @@
               src="./images//profile//02.png"
               alt="user-image"
             />
-            <div class="stars text-center">
-              <i class="u-starts far fa-star"></i>
-              <i class="u-starts fa fa-star"></i>
-              <i class="u-starts fa fa-star"></i>
-              <i class="u-starts fa fa-star"></i>
-              <i class="u-starts fa fa-star"></i>
+            <div
+              class="stars text-center d-flex align-items-center justify-content-center mt-2"
+            >
+              <span class="d-block txt">مصطفى على</span>
+              <a href="edit-profile.html">
+                <i class="fa fa-pen pen-icon"></i>
+              </a>
             </div>
-            <button class="contact-user d-block">تواصل معى</button>
-            <button class="contact-user btn-link d-block">
-              <a href="edit-profile.html" class="go-to-edit d-block"
-                >تعديل البروفايل</a
-              >
-            </button>
           </div>
-          <div class="all-parts-container pt-4">
+          <div class="all-parts-container">
             <div
               class="more-information d-flex justify-content-between flex-wrap"
             >
-              <div class="parts">
-                <span class="d-block txt">مصطفى على</span>
-                <span class="d-block">برمجه وتطوير</span>
-              </div>
               <div class="parts">
                 <span class="d-block txt">
                   <i class="fa fa-calendar-alt icons"></i>
@@ -120,11 +112,22 @@
                 </span>
               </div>
               <div class="parts">
+                <span class="d-block text-center">برمجه وتطوير</span>
+                <div class="stars text-center">
+                  <i class="u-starts far fa-star"></i>
+                  <i class="u-starts fa fa-star"></i>
+                  <i class="u-starts fa fa-star"></i>
+                  <i class="u-starts fa fa-star"></i>
+                  <i class="u-starts fa fa-star"></i>
+                </div>
+              </div>
+              <div class="parts">
                 <span class="d-block txt">5 سنوات خبره</span>
                 <span class="d-block">العمل 40 ساعه بالاسبوع</span>
               </div>
             </div>
-            <p class="text-center for-hours">المعدل للساعه 200 جنيه للساعه</p>
+            <button class="contact-user d-block">تواصل معى</button>
+            <!-- <p class="text-center for-hours">المعدل للساعه 200 جنيه للساعه</p> -->
           </div>
         </div>
       </div>
@@ -133,6 +136,12 @@
     <!-- Start User Bio  -->
     <section class="user-bio mt-5 mb-5">
       <div class="container">
+        <div
+          class="d-flex mb-4 w-100 for-hour-work justify-content-between align-items-center flex-wrap"
+        >
+          <span class="d-block ttext">المعدل للساعه</span>
+          <span class="d-block ttext">200 جنيه للساعه</span>
+        </div>
         <p class="ttext mb-0">
           مجموعة من رواد الاعمال لديهم الخبرة في تنفيذ مواقع الانترنت ولديهم
           النية في تقديم خدمات للمشتركين بهذه المواقع لا نتبع أي فصيل أو جهة
@@ -148,42 +157,44 @@
 
     <!-- Start User Skills  -->
     <section class="user-skills mb-5">
-      <h4 class="text-center mb-4">المهارات</h4>
       <div class="container">
-        <div class="all-tags d-flex justify-content-center flex-wrap">
-          <button class="text-capitalize rounded-pill d-block tags-btn">
-            html
-          </button>
-          <button class="text-capitalize rounded-pill d-block tags-btn">
-            javascript
-          </button>
-          <button class="text-capitalize rounded-pill d-block tags-btn">
-            sass
-          </button>
-          <button class="text-capitalize rounded-pill d-block tags-btn">
-            bootstrap
-          </button>
-          <button class="text-capitalize rounded-pill d-block tags-btn">
-            css
-          </button>
-          <button class="text-capitalize rounded-pill d-block tags-btn">
-            vue js
-          </button>
-          <button class="text-capitalize rounded-pill d-block tags-btn">
-            nuxt.js
-          </button>
-          <button class="text-capitalize rounded-pill d-block tags-btn">
-            php
-          </button>
-          <button class="text-capitalize rounded-pill d-block tags-btn">
-            laravel
-          </button>
-          <button class="text-capitalize rounded-pill d-block tags-btn">
-            bootstap vue
-          </button>
-          <button class="text-capitalize rounded-pill d-block tags-btn">
-            node js
-          </button>
+        <div class="with-container">
+          <h4 class="mb-4">المهارات</h4>
+          <div class="all-tags d-flex justify-content-center flex-wrap">
+            <button class="text-capitalize rounded-pill d-block tags-btn">
+              html
+            </button>
+            <button class="text-capitalize rounded-pill d-block tags-btn">
+              javascript
+            </button>
+            <button class="text-capitalize rounded-pill d-block tags-btn">
+              sass
+            </button>
+            <button class="text-capitalize rounded-pill d-block tags-btn">
+              bootstrap
+            </button>
+            <button class="text-capitalize rounded-pill d-block tags-btn">
+              css
+            </button>
+            <button class="text-capitalize rounded-pill d-block tags-btn">
+              vue js
+            </button>
+            <button class="text-capitalize rounded-pill d-block tags-btn">
+              nuxt.js
+            </button>
+            <button class="text-capitalize rounded-pill d-block tags-btn">
+              php
+            </button>
+            <button class="text-capitalize rounded-pill d-block tags-btn">
+              laravel
+            </button>
+            <button class="text-capitalize rounded-pill d-block tags-btn">
+              bootstap vue
+            </button>
+            <button class="text-capitalize rounded-pill d-block tags-btn">
+              node js
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -191,7 +202,7 @@
     <!-- Start User Works  -->
     <section class="author-service" dir="ltr">
       <div class="container">
-        <h2 class="main-section-title text-center">سابقة اعمالك</h2>
+        <h4 class="main-section-titl mb-4" dir="rtl">سابقة اعمالك</h4>
         <div class="responsive">
           <div class="card">
             <div class="card-photo">
@@ -248,39 +259,34 @@
     <!-- Start User Certifications  -->
     <div class="certifications mt-5">
       <div class="container">
-        <div class="row">
-          <div class="user-certificate col-md-6">
-            <h6 class="cert-title mb-4">الشهاده التعليميه</h6>
-            <div class="certificate-place d-flex align-items-center">
-              <span class="cert-icon d-block">
-                <i class="fas fa-cog"></i>
-              </span>
-              <div class="certificate-details">
-                <span class="d-block university"
-                  >كلية العلوم جامعة القاهره</span
-                >
-                <span class="d-block">الرياضيات وعلوم الحاسوب</span>
-                <span class="d-block"
-                  >جامعة الاسكندريه-كلية العلوم-قسم الرياضيات وعلوم
-                  الحاسوب</span
-                >
-                <span class="d-block">اغسطس 2018- سبتمبر 2022</span>
-              </div>
+        <div class="user-certificate col-md-12">
+          <h6 class="cert-title mb-4">الشهاده التعليميه</h6>
+          <div class="certificate-place d-flex align-items-center">
+            <span class="cert-icon d-block">
+              <i class="fas fa-cog"></i>
+            </span>
+            <div class="certificate-details">
+              <span class="d-block university">كلية العلوم جامعة القاهره</span>
+              <span class="d-block">الرياضيات وعلوم الحاسوب</span>
+              <span class="d-block"
+                >جامعة الاسكندريه-كلية العلوم-قسم الرياضيات وعلوم الحاسوب</span
+              >
+              <span class="d-block">اغسطس 2018- سبتمبر 2022</span>
             </div>
           </div>
-          <div class="user-certificate col-md-6">
-            <h6 class="cert-title mb-4">الشهاده التعليميه</h6>
-            <div class="certificate-place d-flex align-items-center">
-              <span class="cert-icon d-block">
-                <i class="fas fa-graduation-cap"></i>
-              </span>
-              <div class="certificate-details">
-                <span class="d-block university"
-                  >مطور برمجيات من معهد تكنولوجيا المعلولمات</span
-                >
-                <span class="d-block">تدريب صيفى</span>
-                <span class="d-block">يونيو 2021</span>
-              </div>
+        </div>
+        <div class="user-certificate col-md-12">
+          <h6 class="cert-title mb-4">الشهاده التعليميه</h6>
+          <div class="certificate-place d-flex align-items-center">
+            <span class="cert-icon d-block">
+              <i class="fas fa-graduation-cap"></i>
+            </span>
+            <div class="certificate-details">
+              <span class="d-block university"
+                >مطور برمجيات من معهد تكنولوجيا المعلولمات</span
+              >
+              <span class="d-block">تدريب صيفى</span>
+              <span class="d-block">يونيو 2021</span>
             </div>
           </div>
         </div>

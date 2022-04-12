@@ -195,7 +195,7 @@ body {
 }
 
 .main-header .navbar .navbar-collapse .user .message-icon {
-  margin: 0 20px;
+  margin-left: 20px;
   cursor: pointer;
 }
 
@@ -207,11 +207,15 @@ body {
 .main-form-container.regigister {
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  padding: 30px 10px;
+  padding: 30px 20px;
 }
 
 .main-form-container.regigister .photo-contain {
   max-height: 460px;
+}
+
+.main-form-container.check-code {
+  height: 450px;
 }
 
 .main-form-container .form-title {
@@ -240,6 +244,11 @@ body {
 .main-form-container .main-form .form-group.for-check-box {
   border: none;
   padding: 0;
+}
+
+.main-form-container .main-form .form-group.check-code {
+  width: 45px;
+  height: 50px;
 }
 
 .main-form-container .main-form .form-group .form-icon {
@@ -278,6 +287,15 @@ body {
 
 .main-form-container .main-form .form-group:focus-within {
   border-color: #203D7F !important;
+}
+
+.main-form-container .main-form .form-group input[type='number']::-webkit-outer-spin-button,
+.main-form-container .main-form .form-group input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.main-form-container .main-form .form-group input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 .main-form-container .main-form .form-group input[type="checkbox"] {

@@ -195,7 +195,7 @@ body {
 }
 
 .main-header .navbar .navbar-collapse .user .message-icon {
-  margin: 0 20px;
+  margin-left: 20px;
   cursor: pointer;
 }
 
@@ -264,66 +264,58 @@ body {
 }
 
 .profile-bg {
-  margin-top: 80px;
+  margin-top: 50px;
   overflow: hidden;
+  min-height: 300px;
 }
 
 .profile-bg .image {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  display: block;
+  height: 300px;
 }
 
 .user-details {
   position: relative;
 }
 
-.user-details .main-details {
-  gap: 40px;
-}
-
-@media (min-width: 320px) and (max-width: 567px) {
-  .user-details .main-details {
-    display: block !important;
-  }
-}
-
 .user-details .main-details .user-image {
-  position: relative;
+  position: absolute;
   max-width: 262px;
   max-height: 262px;
-  top: -131px;
+  top: -312px;
+  right: calc(50% - 131px);
 }
 
-.user-details .main-details .user-image .stars {
+.user-details .main-details .user-image .pen-icon {
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #203D7F;
+  -webkit-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.user-details .main-details .user-image .pen-icon:hover {
+  background-color: #203D7F;
+  color: #fff;
+}
+
+.user-details .main-details .all-parts-container .more-information {
+  margin-top: 170px;
+}
+
+.user-details .main-details .all-parts-container .more-information .stars {
   margin-top: .5rem;
 }
 
-.user-details .main-details .user-image .stars .u-starts {
+.user-details .main-details .all-parts-container .more-information .stars .u-starts {
   color: #203D7F;
-}
-
-@media (min-width: 320px) and (max-width: 567px) {
-  .user-details .main-details .user-image {
-    margin: auto;
-  }
-}
-
-.user-details .main-details .all-parts-container {
-  width: calc(100% - 302px);
-}
-
-@media (min-width: 320px) and (max-width: 567px) {
-  .user-details .main-details .all-parts-container {
-    width: 100%;
-    text-align: center;
-    padding-top: 0 !important;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 567px) {
-  .user-details .main-details .all-parts-container .more-information {
-    display: block !important;
-  }
 }
 
 @media (min-width: 320px) and (max-width: 991px) {
@@ -352,9 +344,21 @@ body {
   margin-top: 3.2rem;
 }
 
+.user-bio .for-hour-work {
+  padding: 30px 0;
+  border-top: 1px solid #203D7F;
+  border-bottom: 1px solid #203D7F;
+}
+
 .user-bio .ttext {
   line-height: 2;
   font-size: 18px;
+}
+
+.user-skills .with-container {
+  padding: 30px 0;
+  border-top: 1px solid #203D7F;
+  border-bottom: 1px solid #203D7F;
 }
 
 .user-skills .all-tags {
@@ -430,6 +434,11 @@ body {
 
 .certifications {
   padding-bottom: 80px;
+}
+
+.certifications .user-certificate {
+  padding: 30px 0;
+  border-top: 1px solid #203D7F;
 }
 
 .certifications .user-certificate .certificate-place {
