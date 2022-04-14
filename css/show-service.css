@@ -131,6 +131,10 @@ body {
           box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.15);
 }
 
+.main-header .navbar {
+  padding: 1rem 0;
+}
+
 .main-header .navbar .navbar-brand {
   margin-right: 0;
   padding: 0;
@@ -202,6 +206,65 @@ body {
 .main-header .navbar .navbar-collapse .user .for-registration .go-sign-up {
   color: #fff;
   text-decoration: none;
+}
+
+.main-header .navbar .navbar-collapse .user .dropdown .dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
+.main-header .navbar .navbar-collapse .user .dropdown .dropdown-toggle::after {
+  display: none;
+}
+
+.main-header .navbar .navbar-collapse .user .dropdown .dropdown-toggle:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.main-header .navbar .navbar-collapse .user .dropdown .dropdown-menu {
+  min-width: 500px;
+  max-width: 500px;
+  max-height: 70vh;
+  overflow-y: auto;
+  left: 20px;
+  padding: 1rem 0.5rem;
+  top: 53px;
+  border: none;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+  .main-header .navbar .navbar-collapse .user .dropdown .dropdown-menu {
+    min-width: 70vw;
+    max-width: 70vw;
+    left: -35vw;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-header .navbar .navbar-collapse .user .dropdown .dropdown-menu {
+    min-width: 100vw;
+    max-width: 100vw;
+    left: -50vw;
+  }
+}
+
+.main-header .navbar .navbar-collapse .user .dropdown .dropdown-menu .dropdown-item {
+  text-align: right;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+  padding: 0.7rem 0.3rem;
+  font-size: 15px;
+  margin-bottom: 0;
+  border-radius: 5px;
+  line-height: 1.5;
 }
 
 .wallet-button, .contact-user, .tags-btn, .add-service-btn {

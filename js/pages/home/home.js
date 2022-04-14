@@ -54,14 +54,25 @@ goUpButton.onclick = () => {
 };
 
 // For Select Box And Signal
-let selectBox = document.querySelectorAll(".select-box option");
-let offers = document.querySelector(".offers .hi");
+let selectBox = document.querySelector(".select-box");
+let offers = document.querySelectorAll(".offers .wrapper-text");
 console.log(selectBox);
 console.log(offers);
 
-selectBox.forEach((element) => {
-  console.log(element.getAttribute("value"));
-  element.addEventListener("click", function (e) {
-    console.log(e.target.value);
+// selectBox.forEach((element) => {
+//   // console.log(element.getAttribute("value"));
+//   // element.addEventListener("change", function (e) {
+//   //   console.log(e.target.value);
+//   // });
+// });
+
+selectBox.addEventListener("change", function (e) {
+  let optinValue = e.target.value;
+  offers.forEach((element) => {
+    let elementTarget = element.getAttribute("data-target");
+    element.classList.remove("active");
+    if (optinValue == elementTarget) {
+      element.classList.add("active");
+    }
   });
 });
