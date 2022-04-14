@@ -1,0 +1,239 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+.main-section-title {
+  color: #203D7F;
+  margin: 0 auto 3rem;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .main-section-title {
+    font-size: 2rem;
+  }
+}
+
+::-moz-selection {
+  background-color: #203D7F;
+  color: #fff;
+}
+
+::selection {
+  background-color: #203D7F;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #203D7F;
+  height: 100px;
+  max-height: 100px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 2px;
+}
+
+.change-photo {
+  position: absolute;
+  bottom: -20px;
+  right: 100px;
+}
+
+.change-photo.for-persaonal {
+  bottom: -13px;
+  right: 90px;
+}
+
+.change-photo .file-input {
+  display: none;
+}
+
+.change-photo .upload-photo {
+  width: 40px;
+  height: 40px;
+  color: #203D7F;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1px 12px rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.change-photo .upload-photo:hover {
+  background-color: #203D7F;
+  color: #fff;
+}
+
+.change-photo .upload-photo .icon {
+  font-size: 16px;
+}
+
+.go-to-up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #203D7F;
+  color: #fff;
+  z-index: 300;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  line-height: 35px;
+  text-align: center;
+  font-size: 18px;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+  display: none;
+}
+
+.the-main-cover {
+  min-height: 300px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.the-main-cover .cover-img {
+  min-height: 300px;
+}
+
+.the-main-cover .title-cover {
+  position: absolute;
+  bottom: 70px;
+  color: #fff;
+}
+
+.subscribe-code {
+  height: 100vh;
+  padding: 40px 0;
+}
+
+.subscribe-code .succes-alerts {
+  background-color: #2ebc7a;
+  color: #fff;
+  padding: 15px 20px;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+}
+
+.subscribe-code .succes-alerts.infos {
+  background-color: #203D7F;
+}
+
+.subscribe-code .succes-alerts .trxt {
+  margin-right: 20px;
+  font-weight: 500px;
+  line-height: 1.7;
+}
+
+.subscribe-code .confirmation-code .confirm-title {
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.subscribe-code .confirmation-code .phone {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.subscribe-code .confirmation-code .confirm-form {
+  max-width: 500px;
+  width: 100%;
+  margin: 50px auto 0;
+}
+
+.subscribe-code .confirmation-code .confirm-form .form-inputs .type-code {
+  width: 70%;
+  outline: none;
+  border: 1px solid #707070;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.subscribe-code .confirmation-code .confirm-form .form-inputs .type-code::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #707070;
+}
+
+.subscribe-code .confirmation-code .confirm-form .form-inputs .type-code:-ms-input-placeholder {
+  font-size: 15px;
+  color: #707070;
+}
+
+.subscribe-code .confirmation-code .confirm-form .form-inputs .type-code::-ms-input-placeholder {
+  font-size: 15px;
+  color: #707070;
+}
+
+.subscribe-code .confirmation-code .confirm-form .form-inputs .type-code::placeholder {
+  font-size: 15px;
+  color: #707070;
+}
+
+.subscribe-code .confirmation-code .confirm-form .form-inputs .type-code::-webkit-outer-spin-button, .subscribe-code .confirmation-code .confirm-form .form-inputs .type-code::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.subscribe-code .confirmation-code .confirm-form .form-inputs .btn-subscribe {
+  border: none;
+  outline: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  background-color: #2ebc7a;
+  color: #fff;
+}
+
+.subscribe-code .confirmation-code .confirm-form .form-inputs .btn-subscribe:focus {
+  outline: none;
+}
+
+.subscribe-code .confirmation-code .resend-code {
+  margin: 30px auto 0;
+  border: none;
+  outline: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.subscribe-code .confirmation-code .resend-code:focus {
+  outline: none;
+}
+
+.subscribe-code .par-text {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  line-height: 1.7;
+  color: #797979;
+}

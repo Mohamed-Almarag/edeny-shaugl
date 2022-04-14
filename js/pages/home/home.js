@@ -56,16 +56,6 @@ goUpButton.onclick = () => {
 // For Select Box And Signal
 let selectBox = document.querySelector(".select-box");
 let offers = document.querySelectorAll(".offers .wrapper-text");
-console.log(selectBox);
-console.log(offers);
-
-// selectBox.forEach((element) => {
-//   // console.log(element.getAttribute("value"));
-//   // element.addEventListener("change", function (e) {
-//   //   console.log(e.target.value);
-//   // });
-// });
-
 selectBox.addEventListener("change", function (e) {
   let optinValue = e.target.value;
   offers.forEach((element) => {
