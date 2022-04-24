@@ -360,47 +360,77 @@ body {
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
-.main-wallet {
-  min-height: 95vh;
-}
-
-.main-wallet .the-main-wrapper {
-  position: relative;
-  top: -30px;
-  background-color: #fff;
-}
-
-.main-wallet .get-mony {
+.all-services-container {
+  padding-top: 120px;
   padding-bottom: 80px;
 }
 
-.main-wallet .get-mony .currency {
+.all-services-container .card {
+  border: none !important;
+  border-radius: 10px;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  padding: 20px;
+  overflow: hidden;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  .main-wallet .get-mony .currency .mon-container {
-    width: 100%;
-    margin-bottom: 1.5rem;
-  }
+.all-services-container .card .all-views {
+  margin-bottom: 10px;
+  padding: 10px 0;
 }
 
-.main-wallet .for-cuurent .mon-title {
-  padding: 20px;
-}
-
-.main-wallet .for-cuurent .wallet-img-container {
-  height: 450px;
-  max-height: 450px;
-  max-width: 700px;
+.all-services-container .card .card-photo {
+  width: 120px;
+  height: 120px;
   margin: auto;
-  width: 100%;
 }
 
-.main-wallet .for-cuurent .wallet-img-container .img {
-  max-height: 100%;
+.all-services-container .card .card-photo .card-img-top {
+  border-radius: 50%;
+}
+
+.all-services-container .card .card-body {
+  text-align: center;
+}
+
+.all-services-container .card .card-body .card-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.all-services-container .card .card-body .job {
+  margin-bottom: 10px;
+}
+
+.all-services-container .card .card-body .job.mony {
+  direction: rtl !important;
+}
+
+.all-services-container .card .card-body .card-text {
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+.all-services-container .card .card-body .stars {
+  margin-top: 0.5rem;
+}
+
+.all-services-container .card .card-body .stars .u-starts {
+  color: #203D7F;
+}
+
+.all-services-container .card .card-body .card-link {
+  padding: 8px 20px;
+  border-radius: 5px;
+  background-color: #203D7F;
+  color: #fff;
+  min-width: 180px;
+  margin: 20px auto 10px;
+}
+
+.all-services-container .service-pagination .Page .pagination .page-item .page-link {
+  color: #797979 !important;
 }
 
 .footer {

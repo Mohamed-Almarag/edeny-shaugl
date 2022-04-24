@@ -502,6 +502,93 @@ body {
   background-color: #e5e5e5;
 }
 
+.wallet-button, .contact-user, .tags-btn, .add-service-btn, .btn-contact-srvice, .more-service {
+  border: none;
+  outline: none;
+}
+
+.wallet-button:focus, .contact-user:focus, .tags-btn:focus, .add-service-btn:focus, .btn-contact-srvice:focus, .more-service:focus {
+  outline: none;
+}
+
+.wallet-button {
+  padding: 8px 20px;
+  border-radius: 5px;
+  background-color: #203D7F;
+  color: #fff;
+}
+
+.contact-user {
+  padding: 8px 20px;
+  border-radius: 5px;
+  background-color: #203D7F;
+  color: #fff;
+  min-width: 180px;
+  margin: 20px auto 0;
+}
+
+.contact-user.btn-link {
+  padding: 0;
+  text-decoration: none;
+}
+
+.contact-user.btn-link .go-to-edit {
+  padding: 8px 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.tags-btn {
+  min-width: 150px;
+  padding: 7px 0;
+  background-color: rgba(32, 61, 127, 0.53);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .tags-btn {
+    min-width: 120px;
+  }
+}
+
+.add-service-btn {
+  padding: 8px 20px;
+  border-radius: 5px;
+  background-color: #203D7F;
+  color: #fff;
+  min-width: 180px;
+  margin: 30px auto 15px;
+}
+
+.btn-contact-srvice {
+  padding: 0;
+}
+
+.btn-contact-srvice .link-in {
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  background-color: #203D7F;
+  color: #fff;
+  min-width: 100px;
+}
+
+.more-service {
+  padding: 0;
+}
+
+.more-service .link-service {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #203D7F;
+  color: #fff;
+  min-width: 180px;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
 .welcome-khedma {
   padding-top: 120px;
   padding-bottom: 80px;
@@ -626,6 +713,8 @@ body {
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   overflow: hidden;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .author-service .card.service-finished {
