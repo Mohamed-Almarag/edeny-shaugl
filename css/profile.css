@@ -255,7 +255,15 @@ body {
   .main-header .navbar .navbar-collapse .user .dropdown .dropdown-menu {
     min-width: 100vw;
     max-width: 100vw;
-    left: -50vw;
+    left: -40vw;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-header .navbar .navbar-collapse .user .dropdown .dropdown-menu.all-messages {
+    min-width: 100vw;
+    max-width: 100vw;
+    left: -58vw;
   }
 }
 
@@ -434,6 +442,11 @@ body {
 .user-details .main-details .all-parts-container .more-information .parts .icons {
   margin: 0 7px;
   color: #203D7F;
+}
+
+.user-details .main-details .all-parts-container .more-information .parts .user-stars-rating {
+  padding: 10px 0 !important;
+  cursor: pointer;
 }
 
 .user-details .main-details .all-parts-container .for-hours {
